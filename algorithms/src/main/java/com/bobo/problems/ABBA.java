@@ -1,6 +1,3 @@
-/* **********************************************************************
- * Copyright 2017 VMware, Inc.  All rights reserved. VMware Confidential
- ************************************************************************/
 package com.bobo.problems;
 
 public class ABBA {

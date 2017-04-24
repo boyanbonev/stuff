@@ -1,6 +1,3 @@
-/* **********************************************************************
- * Copyright 2016 VMware, Inc.  All rights reserved. VMware Confidential
- ************************************************************************/
 package com.bobo.pgp;
 
 import java.io.ByteArrayOutputStream;
