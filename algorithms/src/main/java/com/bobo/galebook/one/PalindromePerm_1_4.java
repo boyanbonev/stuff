@@ -3,7 +3,7 @@ package com.bobo.galebook.one;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PalindromePerm {
+public class PalindromePerm_1_4 {
 	/**
 	 * @param s
 	 * @return
@@ -33,7 +33,7 @@ public class PalindromePerm {
 
 	public static void main(String[] args) {
 		String s = "ab jgkkj ab";
-		boolean hasPalindrome = new PalindromePerm().isPalindromePerm(s);
+		boolean hasPalindrome = new PalindromePerm_1_4().isPalindromePerm(s);
 
 		System.out.println("'" + s + "' " + (hasPalindrome ? "has" : "doesn't have") + " a palindrome");
 	}
