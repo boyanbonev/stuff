@@ -1,7 +1,7 @@
 /* **********************************************************************
  * Copyright 2017 VMware, Inc.  All rights reserved. VMware Confidential
  ************************************************************************/
-package com.bobo.galebook;
+package com.bobo.galebook.eight;
 
 public class TripleStep_8_1 {
 
