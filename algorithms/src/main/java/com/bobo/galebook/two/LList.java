@@ -27,7 +27,7 @@ public class LList<T> {
 
 		Node<T> n = head;
 		while (n.getNext() != null) {
-			if (n.getData().equals(data)) {
+			if (n.getNext().getData().equals(data)) {
 				n.next = n.next.next;
 				return;
 			}
@@ -72,6 +72,23 @@ public class LList<T> {
 		@Override
 		public String toString() {
 			return "" + data;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (!(obj instanceof Node)) {
+				return false;
+			}
+
+			@SuppressWarnings("unchecked")
+			Node<T> object = (Node<T>) obj;
+
+			return object.getData().equals(data);
+		}
+
+		@Override
+		public int hashCode() {
+			return data.hashCode();
 		}
 	}
 }
