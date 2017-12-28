@@ -2,8 +2,10 @@ package com.bobo.galebook.three;
 
 import com.bobo.galebook.two.LList.Node;
 
-public class List<T> {
+public class Stack<T> {
 	private Node<T> top;
+
+	private int size;
 
 	public T pop() {
 		if (top == null) {
@@ -11,6 +13,7 @@ public class List<T> {
 		}
 		T data = top.getData();
 		top = top.getNext();
+		size--;
 
 		return data;
 	}
@@ -21,6 +24,7 @@ public class List<T> {
 			newNode.setNext(top);
 		}
 		top = newNode;
+		size++;
 	}
 
 	public T peek() {
@@ -35,6 +39,10 @@ public class List<T> {
 		return top == null;
 	}
 
+	public int size() {
+		return size;
+	}
+
 	public void print() {
 		Node<T> n = top;
 		while (n != null) {
@@ -45,7 +53,7 @@ public class List<T> {
 	}
 
 	public static void main(String[] args) {
-		List<Integer> stack = new List<>();
+		Stack<Integer> stack = new Stack<>();
 		for (int i = 1; i < 5; i++) {
 			System.out.print(i + " ");
 			stack.push(i);
@@ -58,5 +66,5 @@ public class List<T> {
 			System.out.print(stack.pop() + " ");
 		}
 	}
-	
+
 }
